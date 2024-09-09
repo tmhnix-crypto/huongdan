@@ -61,10 +61,10 @@ sudo mysql_secure_installation
 sudo mysql
 
 # Tạo database và user
-CREATE DATABASE db;
-CREATE USER 'root'@'localhost' IDENTIFIED BY '123123Aa';
-ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY '123123Aa';
-GRANT ALL PRIVILEGES ON *.* TO 'root'@'localhost' WITH GRANT OPTION;
+CREATE DATABASE '$DATABASE_NEW';
+CREATE USER '$USER'@'localhost' IDENTIFIED BY '$PASS_WORK_NEW';
+ALTER USER '$USER'@'localhost' IDENTIFIED WITH mysql_native_password BY '$PASS_WORK_NEW';
+GRANT ALL PRIVILEGES ON *.* TO '$USER@SERVER_HOST' WITH GRANT OPTION;
 FLUSH PRIVILEGES;
 exit
 ```
